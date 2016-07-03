@@ -6,8 +6,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
 {
     [RequireComponent(typeof (Rigidbody))]
     [RequireComponent(typeof (CapsuleCollider))]
+
+
+
     public class RigidbodyFirstPersonController : MonoBehaviour
     {
+		public bool keyChange = false;
+		public bool jumping = false;
+
+
         [Serializable]
         public class MovementSettings
         {
@@ -20,12 +27,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
             public AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
             [HideInInspector] public float CurrentTargetSpeed = 8f;
 
+			public bool isRunning = false;
+
 #if !MOBILE_INPUT
             private bool m_Running;
 #endif
 
             public void UpdateDesiredTargetSpeed(Vector2 input)
-            {
+            {	
+				if (input.y != 0) {
+					isRunning = true;
+				} else {
+					isRunning = false;
+				}
 	            if (input == Vector2.zero) return;
 				if (input.x > 0 || input.x < 0)
 				{
@@ -130,9 +144,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             RotateView();
 
+
             if (CrossPlatformInputManager.GetButtonDown("Jump") && !m_Jump)
             {
                 m_Jump = true;
+				jumping = true;
             }
         }
 
@@ -145,7 +161,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if ((Mathf.Abs(input.x) > float.Epsilon || Mathf.Abs(input.y) > float.Epsilon) && (advancedSettings.airControl || m_IsGrounded))
             {
                 // always move along the camera forward as it is the direction that it being aimed at
-                Vector3 desiredMove = cam.transform.forward*input.y + cam.transform.right*input.x;
+				Vector3 desiredMove = cam.transform.forward * input.y + cam.transform.right * input.x;
+
                 desiredMove = Vector3.ProjectOnPlane(desiredMove, m_GroundContactNormal).normalized;
 
                 desiredMove.x = desiredMove.x*movementSettings.CurrentTargetSpeed;
@@ -184,6 +201,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
             }
             m_Jump = false;
+			jumping = false;
         }
 
 

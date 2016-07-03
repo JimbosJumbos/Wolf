@@ -32,7 +32,7 @@ public class ZombieRayCast : MonoBehaviour {
 			if (ray.collider.tag == "Player") {
 				GetComponent<ZombieFollowSimple> ().moveToPlayer = true;
 				spotted = true;
-				player.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl> ().keyChange = true;
+				player.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController> ().keyChange = true;
 			} else {
 				spotted = false;
 				GetComponent<ZombieFollowSimple> ().moveToPlayer = false;

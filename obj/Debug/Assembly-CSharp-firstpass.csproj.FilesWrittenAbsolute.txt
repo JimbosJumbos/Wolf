@@ -15,3 +15,20 @@
 /Users/joem29/Test Game/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/joem29/Test Game/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/joem29/Test Game/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/joem29/Desktop/Wolf/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/joem29/Desktop/Wolf/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/UnityEngine.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/UnityEditor.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Mono.Cecil.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Unity.DataContract.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/joem29/Desktop/Wolf/Temp/bin/Debug/Mono.Cecil.Mdb.dll
