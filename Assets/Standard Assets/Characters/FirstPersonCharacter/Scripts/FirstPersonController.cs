@@ -99,6 +99,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
 
+			if (GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController> ().keyChange) {
+				desiredMove = transform.forward*m_Input.x + transform.right*m_Input.y;
+			}
+
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
             Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
