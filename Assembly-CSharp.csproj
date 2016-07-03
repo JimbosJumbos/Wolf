@@ -45,17 +45,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\EthanWalk.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ZombieCollide.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ZombieFollowSimple.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ZombieRayCast.cs" />
+     <Compile Include="Assets\Scripts\GUITEMP.cs" />
+     <Compile Include="Assets\Scripts\GUITEMPSHOP.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MouseEnter.cs" />
-     <Compile Include="Assets\Scripts\PlayerSwitch.cs" />
-     <Compile Include="Assets\Scripts\ZombieCollide.cs" />
-     <Compile Include="Assets\Scripts\ZombieFollowSimple.cs" />
-     <Compile Include="Assets\Scripts\ZombieRayCast.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Player\EthanWalk.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerSwitch.cs" />
+     <Compile Include="Assets\Scripts\Shop\CurrencyCollect.cs" />
+     <Compile Include="Assets\Scripts\Shop\NoDestroyOnChange.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopCurrencyTracker.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopWarp.cs" />
+     <None Include="Assets\_Dan\placeholder.txt" />
+     <None Include="Assets\_Upload_your_stuff_in_the_folder_above\placeholder.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\_Simmo\placeholder.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>

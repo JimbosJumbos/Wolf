@@ -32,7 +32,7 @@ public class MouseEnter : MonoBehaviour {
 		if (exitButton) {
 			Application.Quit ();
 		} else {
-			SceneManager.LoadScene("TestArena");
+			SceneManager.LoadScene("MainLevelDesign");
 		}
 	}
 

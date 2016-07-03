@@ -33,6 +33,7 @@ public class ZombieRayCast : MonoBehaviour {
 				GetComponent<ZombieFollowSimple> ().moveToPlayer = true;
 				spotted = true;
 				player.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController> ().keyChange = true;
+				player.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController> ().deltaKey = 5f;
 			} else {
 				spotted = false;
 				GetComponent<ZombieFollowSimple> ().moveToPlayer = false;

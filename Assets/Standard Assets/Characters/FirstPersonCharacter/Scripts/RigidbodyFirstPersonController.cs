@@ -13,6 +13,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     {
 		public bool keyChange = false;
 		public bool jumping = false;
+		public float deltaKey = 0f;
 
 
         [Serializable]
@@ -144,6 +145,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             RotateView();
 
+			if (keyChange) {
+
+				deltaKey -= Time.deltaTime;
+
+				if (deltaKey <= 0) {
+					keyChange = false;
+					deltaKey = 0f;
+				}
+			}
 
             if (CrossPlatformInputManager.GetButtonDown("Jump") && !m_Jump)
             {
