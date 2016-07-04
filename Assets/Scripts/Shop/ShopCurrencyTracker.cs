@@ -5,4 +5,6 @@ public class ShopCurrencyTracker : MonoBehaviour {
 
 	public int playerCurrency = 0;
 
+
+
 }
