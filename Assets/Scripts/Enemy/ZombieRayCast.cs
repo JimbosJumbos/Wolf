@@ -4,9 +4,9 @@ using System.Collections;
 public class ZombieRayCast : MonoBehaviour {
 
 	public GameObject player;
-	float firstSpot = 7.5f;
+	public float firstSpot = 7.5f;
 	bool spotted = false;
-	float loseSpot = 1f;
+	public float loseSpot = 1f;
 	float curretViewDistance;
 
 	void Update(){
