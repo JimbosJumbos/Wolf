@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Player\EthanWalk.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerSwitch.cs" />
      <Compile Include="Assets\Scripts\Shop\CurrencyCollect.cs" />
+     <Compile Include="Assets\Scripts\Shop\Input\Quit.cs" />
      <Compile Include="Assets\Scripts\Shop\ShopCurrencyTracker.cs" />
      <Compile Include="Assets\Scripts\Shop\ShopWarp.cs" />
      <None Include="Assets\_Dan\placeholder.txt" />

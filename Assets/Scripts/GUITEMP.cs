@@ -8,7 +8,7 @@ public class GUITEMP : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		ShopTracker = GameObject.FindGameObjectWithTag ("ShopController");
 	}
 	
 	// Update is called once per frame
