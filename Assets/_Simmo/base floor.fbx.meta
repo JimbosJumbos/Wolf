@@ -16,12 +16,15 @@ ModelImporter:
     2300000: ground
     2300002: water in
     2300004: water out
+    2300006: //RootNode
     3300000: ground
     3300002: water in
     3300004: water out
+    3300006: //RootNode
     4300000: water out
     4300002: water in
     4300004: ground
+    4300006: Plane
   materials:
     importMaterials: 1
     materialName: 0

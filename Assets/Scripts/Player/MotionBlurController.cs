@@ -14,11 +14,13 @@ public class MotionBlurController : MonoBehaviour {
 			if (player.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController> ().keyChange) {
 				active = true;
 				GetComponent<UnityStandardAssets.ImageEffects.MotionBlur> ().enabled = true;
+				GetComponent<UnityStandardAssets.ImageEffects.NoiseAndGrain> ().enabled = true;
 			} 
 		} else {
 			if (!player.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController> ().keyChange) {
 				active = false;;
 				GetComponent<UnityStandardAssets.ImageEffects.MotionBlur> ().enabled = false;
+				GetComponent<UnityStandardAssets.ImageEffects.NoiseAndGrain> ().enabled = false;
 			} 
 		}
 	
